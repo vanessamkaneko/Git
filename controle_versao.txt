@@ -1,0 +1,33 @@
+Tipos de controle de versão
+
+Sistemas LOCAIS
+    - Muito comum e simples;
+    - Muito propenso a erros;
+    - Fácil de sobreescrever arquivos caso tenha feito uma cópia errada;
+    - Trabalhoso para compartilhar alterações feitas em um projeto;
+
+
+Sistemas CENTRALIZADOS
+    - Um único servidor que contém todos os arquivos de controle de versão
+    - Vários clientes usam arquivos a partir desse lugar central
+    *por muitos anos este tem sido o padrão para controle de versão
+
+    Vantagens sobre os VCSs locais
+        - Controle sobre as atividades dos colaboradores no projeto;
+        - Os adms tem controle refinado sobre quem pode fazer o que;
+        - Mais fácil de administrar um CVCS do que lidar com bancos de dados locais de cada cliente;
+
+    Desvantagens
+        - Se o servidor cair/der problema, durante este período ninguém pode colaborar ou fazer alterações de versão para o que quer que estejam trabalhando;
+        - Se o disco rígido do banco central for corrompido, há perda de absolutamente tudo (sistemas VCS locais também sofrer com isso);
+
+Sistemas DISTRIBUÍDOS (Git, Mercurial, Bazaar e Darcs)
+    - Irá duplicar/clonar localmente o repositório completo (se 3 pessoas estiverem trabalhando no projeto, as 3 pessoas irão ter um clone no seu computador do repositório completo);
+    - Se qualquer servidor morrer, e esses sistemas estiverem colaborando por meio dele, qualquer um dos repositórios do cliente (do dev...) poderá ser copiado de volta para o servidor;
+    - Cada clone é de fato um backup completo de todos os dados;
+    - Clientes usam o estado mais recente dos arquivos;
+    - Mesmo sem internet, pode-se fazer alterações, e depois com internet é só subir para a nuvem;
+----------------------------------------------------------------------------------
+
+
+

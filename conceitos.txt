@@ -1,0 +1,41 @@
+O QUE É GIT?
+- É um sistema de controle de versão distribuído;
+- É open-source: é um código gratuito e aberto;
+- Pontos na história: COMMIT (viagem no tempo) - permite voltar para qualquer ponto na linha do tempo da história do projeto, possibilitando que haja um histórico de alterações no código;
+- Possibilita o controle de novas funcionalidades:
+    ~ permite a criação dos "branchs", ou seja, ramificações/linha alternativa do projeto principal, a qual possui pontos na história que posteriormente pode ser unida novamente à linha do tempo principal
+    ~ vários devs podem trabalhar ao mesmo tempo
+    ~ permite a análise e resolução de conflitos
+
+------------------------------------------------------------------------------
+
+ESTÁGIOS DO ARQUIVO
+
+- Para iniciarmos, utilizamos o git init (inicia um repositório local dentro do projeto)
+- Os arquivos desta pasta estarão no Working Directory
+- Ao dar um git add, estes arquivos serão jogados para a próxima etapa, a Stage Area - nesta área o arquivo está preparado para ser comitado, ou seja, para ser colocado no banco de dados local (o repositório)
+- Commit: arquivo é adicionado ao repositório local 
+
+- Arquivos no Working Directory: modified | todos os nossos arquivos às vezes chamado de Working Tree
+- Arquivos no Stage Area: staged | preparação dos nossos arquivos para serem comitados | às vezes chamado de index ou Working Tree
+- Arquivos no repositório local: commited (é neste momento que é criado um ponto na história) | é o banco de dados dos nossos arquivos, onde ficarão os pontos da história ou o histórico do proejto
+
+------------------------------------------------------------------------------
+
+GIT WORKFLOW
+
+- Supondo que eu esteja na versão 4 de um projeto, mas desde a versão 1 eu fiz o git add e o commit, no repositório local eu terei acesso sempre a última versão, entretanto, se eu precisar ter acesso a versões antigas, é possível, pois todos estes pontos na história estarão guardados no repositório local.
+
+------------------------------------------------------------------------------
+
+HASH VALUES (SHA-1)
+
+- A cada commit que damos, o Git gera um checksum, ou seja, ocorre uma conversão de dados em números (tudo para manter a integridade dos dados);
+- Cada hash é único e contém os dados das alterações que foram realizada;
+
+------------------------------------------------------------------------------
+
+HEAD
+
+- É como se fosse um ponteiro: nos aponta em que ponto da história nós estamos (mostra em que commit estamos)
+- Master: nome da linha principal
